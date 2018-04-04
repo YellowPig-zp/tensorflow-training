@@ -92,7 +92,7 @@ with tf.Session() as session:
 
     # Run the global variable initializer to initialize all variables and layers of the neural network
     session.run(tf.global_variables_initializer())
-
+    # This is a new one
 
 
     # Run the optimizer over and over to train the network.

@@ -95,6 +95,8 @@ with tf.Session() as session:
     # This is a new one
 
 
+
+
     # Run the optimizer over and over to train the network.
     # One epoch is one full run through the training data set.
     for epoch in range(training_epochs):

@@ -161,6 +161,7 @@ with tf.Session() as session:
         method_name=tf.saved_model.signature_constants.PREDICT_METHOD_NAME
     )
 
+
     model_builder.add_meta_graph_and_variables(
         session,
         tags=[tf.saved_model.tag_constants.SERVING],

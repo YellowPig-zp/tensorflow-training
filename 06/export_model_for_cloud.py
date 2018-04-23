@@ -146,21 +146,20 @@ with tf.Session() as session:
     print("The actual earnings of Game #1 were ${}".format(real_earnings))
     print("Our neural network predicted earnings of ${}".format(predicted_earnings))
 
-    model_builder = tf.saved_model.builder.SavedModelBuilder("exported_model")
+    model_builder =
 
     inputs = {
-        'input': tf.saved_model.utils.build_tensor_info(X)
+        'input':
         }
     outputs = {
-        'earnings': tf.saved_model.utils.build_tensor_info(Y)
+        'earnings':
         }
 
     signature_def = tf.saved_model.signature_def_utils.build_signature_def(
-        inputs=inputs,
-        outputs=outputs,
+        inputs=,
+        outputs=,
         method_name=tf.saved_model.signature_constants.PREDICT_METHOD_NAME
     )
-
 
     model_builder.add_meta_graph_and_variables(
         session,
